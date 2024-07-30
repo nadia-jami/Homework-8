@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+      .main{
+        width: 30%;
+        margin: 0 auto;
+        padding: 30px;
+       
+      }
+      .photo ,  .hidden-box{
+        width: 90%;
+      }
+
+      .hidden-box{
+        border: 2px solid black;
+        text-align: center;
+        display: none;
+        
+      }
+
+      .heading{
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+        
+      }
+      .image-part{
+        width: 50%;
+        display: inline-block;
+      }
+      .photo:hover+.hidden-box{
+        display: block;
+
+      }
+
+      .image-part img{
+        height: 100%;
+        width: 100%;
+        border: 2px solid black;
+      }
+      .image img{
+        width: 100%;
+      }
+      .text{
+        padding: 25px;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="photo">
+        <div class="heading">
+            <h2>Hover the photo!</h2>
+        </div>
+        <div class="image-part">
+            <img src="4.jpg" alt="" width="100%">
+        </div>
+        </div>
+        <div class="hidden-box">
+            <div class="image">
+                <img src="4.jpg" alt="" width="74%">
+            </div>
+            <div class="text">
+                Beautiful Cinque Terre
+            </div>
+        </div>
+    </div>
+</body>
+</html>
